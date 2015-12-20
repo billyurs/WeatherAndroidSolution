@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e52d27">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtname"
+            android:textSize="36dp"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:textColor="#bd081c"
+            android:textColorHint="#bd081c"
+            android:background="#ffffff"
+            android:layout_marginTop="113dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtemail"
+            android:textSize="36dp"
+            android:hint="E mail"
+            android:textAlignment="center"
+            android:textColorHint="#bd081c"
+            android:textColor="#bd081c"
+            android:background="#ffffff"
+            android:layout_below="@+id/edtname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/button4"
+            android:textSize="32dp"
+            android:textColor="#fcf9f9"
+            android:onClick="signupcomplete"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtphone"
+            android:textSize="36dp"
+            android:hint="Phone no"
+            android:textAlignment="center"
+            android:textColorHint="#bd081c"
+            android:textColor="#bd081c"
+            android:background="#ffffff"
+            android:layout_below="@+id/edtemail"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtpswd"
+            android:textSize="36dp"
+            android:hint="Pssword"
+            android:textAlignment="center"
+            android:textColorHint="#bd081c"
+            android:textColor="#bd081c"
+            android:background="#ffffff"
+            android:layout_below="@+id/edtphone"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtrepswd"
+            android:textSize="36dp"
+            android:textAlignment="center"
+            android:textColorHint="#bd081c"
+            android:textColor="#bd081c"
+            android:background="#ffffff"
+            android:hint="Re-enter"
+            android:layout_below="@+id/edtpswd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Below Details"
+            android:id="@+id/textView2"
+            android:textSize="36dp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtlocation"
+            android:textSize="36dp"
+            android:textAlignment="center"
+            android:textColorHint="#bd081c"
+            android:textColor="#bd081c"
+            android:background="#ffffff"
+            android:hint="Location"
+            android:layout_below="@+id/btngetloc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get location"
+            android:id="@+id/btngetloc"
+            android:textSize="32dp"
+            android:background="#930a00"
+            android:textColor="#f7f5f5"
+            android:onClick="getthelocation"
+            android:layout_below="@+id/edtrepswd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="41dp" />
+    </RelativeLayout>
+</LinearLayout>

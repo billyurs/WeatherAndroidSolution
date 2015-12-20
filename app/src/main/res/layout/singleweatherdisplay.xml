@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#00ffa8"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#4b1048"
+        android:padding="10dp"
+        android:text="DATE: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <!-- Name Label -->
+
+    <TextView
+        android:id="@+id/mintemp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:padding="10dp"
+        android:textColor="#4b1048"
+        android:text="MIN TEMP: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Email label -->
+    <TextView
+        android:id="@+id/edesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DESC: "
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#4b1048" />
+
+    <!-- Mobile number label -->
+    <TextView
+        android:id="@+id/etemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="left"
+        android:text="EXACT TEMP: "
+        android:padding="10dp"
+        android:textColor="#4b1048"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/maxtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="MAX TEMP: "
+        android:textColor="#4b1048"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="16.73" />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tharunkrishna.grocessory.MainActivity"
+    android:background="#bd081c">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtusername"
+        android:textSize="32dp"
+        android:hint="Mail ID"
+        android:textAlignment="center"
+        android:layout_above="@+id/edtpassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp"
+        android:textColorHint="#bd081c"
+        android:textColor="#00b489"
+        android:background="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtpassword"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#00b489"
+        android:textColorHint="#bd081c"
+
+        android:background="#ffffff"
+        android:hint="Password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weather Remainder"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:textSize="36dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Login   "
+        android:id="@+id/btnlogin"
+        android:layout_below="@+id/edtpassword"
+        android:layout_marginTop="55dp"
+        android:textSize="32dp"
+        android:background="@android:color/transparent"
+        android:textColor="#fffdfd"
+        android:onClick="loginsuccess"
+        android:layout_alignRight="@+id/edtpassword"
+        android:layout_alignEnd="@+id/edtpassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btnsign"
+        android:layout_marginTop="42dp"
+        android:textSize="32dp"
+        android:background="@android:color/transparent"
+        android:textColor="#fbf8f8"
+        android:onClick="signupactivity"
+        android:layout_below="@+id/btnlogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
